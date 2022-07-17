@@ -1,3 +1,3 @@
 # TopGunLab-Modulo-2
-Task second Module \n
+Task second Module. 
 In this repos i will add every asigned task.
