@@ -1,12 +1,13 @@
 import psycopg
 
+PASSWORD = "My_password"
 
 class UserConnection:
     conn = None
 
     def __init__(self):
         try:
-            self.conn = psycopg.connect("dbname=veterinary user=postgres password=Banesco.1 host=localhost port=5432")
+            self.conn = psycopg.connect(f"dbname=veterinary user=postgres password={PASSWORD} host=localhost port=5432")
         except psycopg.OperationalError as error:
             print(error)
             self.conn.close()
